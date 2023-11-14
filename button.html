@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Text on Button Click</title>
+    <style>
+        body{
+            text-align: center;
+            
+        }
+        #one {
+            display: none;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="showText()">Show Text</button>
+    <p id="one">
+      welcome to careerx
+    </p>
+
+    <script>
+        function showText() {
+            var textElement = document.getElementById("one");
+            textElement.style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
